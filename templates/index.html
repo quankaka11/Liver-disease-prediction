@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Model AI</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+        <header>
+            <h1>MODEL AI LIVER DISEASE PREDICTION</h1>
+        </header>
+        <main>
+            <div class="container">
+                <form action="#">
+                    <div class="box">
+                        <div class="input-box">
+                            <label for="age" title="Tuổi của bệnh nhân">Age</label>
+                            <input type="number"
+                                    id="age"
+                                    name="age"
+                                    placeholder="Age"/>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="gender" title="Giới tính của bệnh nhân(0:Female,1:Male)">Gender</label>
+                            <input type="number"
+                                    id="gender"
+                                    name="gender"
+                                    placeholder="Gender"/>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="Total_Bilirubin" title="Tổng nồng độ bilirubin trong máu. Bilirubin là một sản phẩm phân hủy của hemoglobin trong hồng cầu. Mức bilirubin cao có thể chỉ ra vấn đề về gan hoặc mật.">Total Bilirubin</label>
+                            <input type="number"
+                                    id="Total_Bilirubin"
+                                    name="Total_Bilirubin"
+                                    placeholder="Total bilirubin"/>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="Direct_Bilirubin" title="Nồng độ bilirubin trực tiếp (liên hợp) trong máu. Bilirubin trực tiếp đã được gan xử lý và thường được bài tiết qua mật. Mức cao có thể chỉ ra vấn đề về gan hoặc tắc nghẽn mật.">Direct Bilirubin</label>
+                            <input type="number"
+                                    id="Direct_Bilirubin"
+                                    name="Direct_Bilirubin"
+                                    placeholder="Direct bilirubin"/>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="Alkaline_Phosphotase" title="Một enzyme được tìm thấy trong nhiều mô cơ thể, bao gồm gan, xương và thận. Mức cao có thể chỉ ra bệnh về gan, xương, hoặc tắc nghẽn đường mật.">Alkaline Phosphotase</label>
+                            <input type="number"
+                                    id="Alkaline_Phosphotase"
+                                    name="Alkaline_Phosphotase"
+                                    placeholder="Alkaline phosphotase"/>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="Alamine_Aminotransferase" title=" Một enzyme chủ yếu được tìm thấy trong gan. Mức cao có thể chỉ ra tổn thương gan.">Alamine Aminotransferase</label>
+                            <input type="number"
+                                    id="Alamine_Aminotransferase"
+                                    name="Alamine_Aminotransferase"
+                                    placeholder="Alamine Aminotransferase"/>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="Aspartate_Aminotransferase" title="Một enzyme được tìm thấy trong gan và các cơ khác. Mức cao có thể chỉ ra tổn thương gan hoặc tổn thương cơ.">Aspartate Aminotransferase</label>
+                            <input type="number"
+                                    id="Aspartate_Aminotransferase"
+                                    name="Aspartate_Aminotransferase"
+                                    placeholder="Aspartate aminotransferase"/>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="Total_Protiens" title="Tổng lượng protein trong máu, bao gồm albumin và globulin. Mức thấp có thể chỉ ra bệnh về gan hoặc thận, hoặc tình trạng dinh dưỡng kém.">Total Protiens</label>
+                            <input type="number"
+                                    id="Total_Protiens"
+                                    name="Total_Protiens"
+                                    placeholder="Total protiens"/>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="Albumin" title="Một loại protein chính được sản xuất bởi gan. Mức thấp có thể chỉ ra bệnh về gan hoặc thận.">Albumin</label>
+                            <input type="number"
+                                    id="Albumin"
+                                    name="Albumin"
+                                    placeholder="Albumin"/>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="Albumin_and_Globulin_Ratio" title=" Tỷ lệ giữa albumin và globulin trong máu. Tỷ lệ này giúp đánh giá chức năng gan và hệ miễn dịch.">Albumin and Globulin Ratio</label>
+                            <input type="number"
+                                    id="Albumin_and_Globulin_Ratio"
+                                    name="Albumin_and_Globulin_Ratio"
+                                    placeholder="Albumin and Globulin ratio"/>
+                        </div>
+                         
+
+                    </div>
+                </form>
+                <div class="form-submit-btn">
+                    <input type="submit" id="submitBtn" value="Predict">
+                </div>
+            </div>
+            <div class="result-box" id="result"></div>
+        </main>
+        <script src="{{ url_for('static', filename='script.js') }}"></script>
+    </body>
+</html>

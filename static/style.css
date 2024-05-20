@@ -1,0 +1,93 @@
+header{ 
+    text-align: center;
+    color: aqua;
+    font-size: 1.5rem;
+}
+
+body{
+    background-image: url(https://image.nhandan.vn/Uploaded/2024/athlrainagbna/2023_03_08/tri-tue-nhan-tao-ai-2-3436.jpg);
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    background-size: 100%;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 100%;
+    max-width: 800px;
+    padding: 28px;
+    margin: 0 28px;
+
+}
+
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.input-box{
+    width: 50%;
+    padding-bottom: 15px;
+}
+
+.input-box label{
+    width: 90%;
+    color: aqua;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 5px 0;
+}
+
+.input-box input{
+    height: 35px;
+    width: 90%;
+    border-radius: 20px;
+    outline: none;
+    border: 1px solid aqua;
+    padding: 0 10px;
+}
+
+.form-submit-btn input{
+    cursor: pointer;
+}
+
+.form-submit-btn{
+    margin-top: 40px;
+}
+
+.form-submit-btn input{
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 10px;
+    border:none;
+    border-radius: 20px;
+    color: aqua;
+    background: rgba(18, 18, 18);
+}
+
+.form-submit-btn input:hover{
+    background: rgba(24, 221, 83, 0.5);
+    color: rgba(48, 219, 122, 0.5);
+}
+
+.result-box {
+    padding: 20px;
+    width: 300px;
+    height: 300px;
+    background-color: #f5f3f3;
+    border-radius: 50%;
+    text-align: center; /* Căn giữa văn bản */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}   
